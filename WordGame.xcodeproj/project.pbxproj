@@ -14,6 +14,8 @@
 		F35EE20A1BF875D3003932E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35EE2091BF875D3003932E2 /* Images.xcassets */; };
 		F35EE20D1BF875D3003932E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F35EE20B1BF875D3003932E2 /* LaunchScreen.xib */; };
 		F35EE2191BF875D3003932E2 /* WordGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F35EE2181BF875D3003932E2 /* WordGameTests.m */; };
+		F35EE2241BF8791E003932E2 /* GQGameItemCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F35EE2231BF8791E003932E2 /* GQGameItemCollectionCell.m */; };
+		F35EE2281BF8BC64003932E2 /* GQGameDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F35EE2271BF8BC64003932E2 /* GQGameDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		F35EE2121BF875D3003932E2 /* WordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35EE2171BF875D3003932E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F35EE2181BF875D3003932E2 /* WordGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordGameTests.m; sourceTree = "<group>"; };
+		F35EE2221BF8791E003932E2 /* GQGameItemCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQGameItemCollectionCell.h; sourceTree = "<group>"; };
+		F35EE2231BF8791E003932E2 /* GQGameItemCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQGameItemCollectionCell.m; sourceTree = "<group>"; };
+		F35EE2261BF8BC64003932E2 /* GQGameDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQGameDetailController.h; sourceTree = "<group>"; };
+		F35EE2271BF8BC64003932E2 /* GQGameDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQGameDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		F35EE1FB1BF875D3003932E2 /* WordGame */ = {
 			isa = PBXGroup;
 			children = (
+				F35EE2251BF8BC30003932E2 /* GQGameDetailController */,
 				F35EE2001BF875D3003932E2 /* AppDelegate.h */,
 				F35EE2011BF875D3003932E2 /* AppDelegate.m */,
 				F35EE2031BF875D3003932E2 /* ViewController.h */,
@@ -89,6 +96,8 @@
 				F35EE2091BF875D3003932E2 /* Images.xcassets */,
 				F35EE20B1BF875D3003932E2 /* LaunchScreen.xib */,
 				F35EE1FC1BF875D3003932E2 /* Supporting Files */,
+				F35EE2221BF8791E003932E2 /* GQGameItemCollectionCell.h */,
+				F35EE2231BF8791E003932E2 /* GQGameItemCollectionCell.m */,
 			);
 			path = WordGame;
 			sourceTree = "<group>";
@@ -117,6 +126,15 @@
 				F35EE2171BF875D3003932E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F35EE2251BF8BC30003932E2 /* GQGameDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				F35EE2261BF8BC64003932E2 /* GQGameDetailController.h */,
+				F35EE2271BF8BC64003932E2 /* GQGameDetailController.m */,
+			);
+			path = GQGameDetailController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +239,8 @@
 			files = (
 				F35EE2051BF875D3003932E2 /* ViewController.m in Sources */,
 				F35EE2021BF875D3003932E2 /* AppDelegate.m in Sources */,
+				F35EE2241BF8791E003932E2 /* GQGameItemCollectionCell.m in Sources */,
+				F35EE2281BF8BC64003932E2 /* GQGameDetailController.m in Sources */,
 				F35EE1FF1BF875D3003932E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +436,7 @@
 				F35EE21E1BF875D3003932E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F35EE21F1BF875D3003932E2 /* Build configuration list for PBXNativeTarget "WordGameTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				F35EE2211BF875D3003932E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
